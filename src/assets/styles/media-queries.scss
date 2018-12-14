@@ -1,0 +1,316 @@
+// Extra small devices (portrait phones, less than 576px)
+
+@media only screen and (max-width:575.98px) {
+	body {
+		font-size: 12px;
+	}
+
+	//HEADER
+	.header {
+		padding-top: 20px;
+	}
+
+	.logo {
+		order: 1;
+		margin-top: 115px;
+		margin-bottom: 50px;
+	}
+
+	.menu {
+		&-item {
+			padding: 0px;
+		}
+
+		& a {
+			font-size: 18px;
+		}
+	}
+
+	.icon-holder {
+		justify-content: space-around;
+
+		& .lang {
+			margin-right: 0;
+		}
+
+		& .user {
+			margin-right: 0;
+		}
+	}
+
+	//jquery class
+	.open {
+		width: 145px;
+		text-align: center;
+		top: 28px;
+		padding: 0;
+	}
+
+	// jquery class
+
+
+	//MAIN SECTION
+
+	.main {
+		padding-bottom: 50px;
+	}
+
+	.porcelaingirl {
+		display: none;
+	}
+
+	.lowpoly-cat {
+		display: none;
+	}
+
+	.title {
+		padding: 0;
+
+		&-main {
+			font-size: 20px;
+			text-align: center;
+			letter-spacing: 4px;
+			line-height: 1;
+			padding-top: 0px;
+			padding-bottom: 20px;
+		}
+
+		&-text {
+			width: 100%;
+			line-height: 2;
+			text-align: center;
+		}
+
+		& .line {
+			padding-top: 10px;
+			width: 45%;
+			margin: 0 auto;
+		}
+	}
+
+	//FOOTER
+	.footer {
+		padding: 25px 0;
+		background: #fff;
+	}
+
+	.contact {
+		justify-content: space-around;
+
+		& a {
+			color: #000;
+		}
+
+		p:first-child {
+			margin-right: 0;
+		}
+	}
+}
+
+//// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+	body {
+		font-size: 16px;
+	}
+
+	//HEADER
+	.header {
+		padding-top: 20px;
+	}
+
+	.logo {
+		order: 1;
+		margin-top: 115px;
+		margin-bottom: 50px;
+	}
+
+	.menu {
+		&-item {
+			padding: 0px;
+		}
+
+		& a {
+			font-size: 18px;
+		}
+	}
+
+	.icon-holder {
+		justify-content: space-around;
+
+		& .lang {
+			margin-right: 0;
+		}
+
+		& .user {
+			margin-right: 0;
+		}
+	}
+
+	//jquery class
+	.open {
+		width: 145px;
+		text-align: center;
+		top: 28px;
+		padding: 0;
+	}
+
+	// jquery class
+
+
+	//MAIN SECTION
+
+	.main {
+		padding-bottom: 50px;
+	}
+
+	.porcelaingirl {
+		display: none;
+	}
+
+	.lowpoly-cat {
+		display: none;
+	}
+
+	.title {
+		padding: 0;
+
+		&-main {
+			font-size: 40px;
+			text-align: center;
+			letter-spacing: 4px;
+			line-height: 1.5;
+			padding-top: 0px;
+			padding-bottom: 20px;
+		}
+
+		&-text {
+			width: 100%;
+			line-height: 2;
+			text-align: center;
+		}
+
+		& .line {
+			padding-top: 10px;
+			width: 45%;
+			margin: 0 auto;
+		}
+	}
+
+	//FOOTER
+	.footer {
+		padding: 25px 0;
+		background: #fff;
+	}
+
+	.contact {
+		justify-content: space-around;
+
+		& a {
+			color: #000;
+		}
+
+		p:first-child {
+			margin-right: 0;
+		}
+	}
+}
+
+//// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 768px) and (max-width: 1199.98px) {
+
+	body {
+		font-size: 14px;
+	}
+
+	//HEADER
+
+	//jquery class
+	.open {
+		width: 145px;
+		text-align: center;
+		top: 40px;
+		padding: 0;
+	}
+
+	// jquery class
+
+	.contact {
+		flex-direction: column;
+
+		p:first-child {
+			margin-right: 0;
+		}
+	}
+
+	//MAIN SECTION
+
+	.porcelaingirl {
+		padding-left: 0;
+
+		& img {
+			width: 75%;
+		}
+
+		&::before {
+			left: 180px;
+		}
+
+		&::after {
+			left: 330px;
+			bottom: 30px;
+		}
+	}
+
+	.lowpoly-cat {
+		padding-top: 397px;
+		padding-left: 0;
+
+		& img {
+			width: 100%;
+			margin-left: 105px;
+		}
+
+		&::before {
+			top: 175px;
+			left: 195px;
+		}
+	}
+
+	.title {
+		padding-left: 0;
+
+		&-main {
+			font-size: 60px;
+			text-align: center;
+			letter-spacing: 6px;
+			padding-top: 0;
+		}
+
+		&-text {
+			line-height: 1.5;
+			text-align: center;
+			width: 100%;
+		}
+
+		& .line {
+			width: 85%;
+			margin: 0 auto;
+		}
+	}
+
+	//FOOTER
+	.footer {
+		padding-top: 50px;
+		background: #fff;
+	}
+}
+
+//// For lowpoly-cat position (tablets, 768px and up)
+@media only screen and (min-width: 901px) and (max-width: 991.98px) {
+	.lowpoly-cat {
+
+		& img {
+			margin-left: 151px;
+		}
+	}
+}

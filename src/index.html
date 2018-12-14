@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>logo</title>
+	<link rel="stylesheet" href="../dist/assets/styles/style.css">
+
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header sticky">
+			<div class="container">
+				<div class="row">
+					<div class="menu col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1">
+						<div class="hamburger hamburger--collapse">
+							<div class="hamburger-box">
+								<div class="hamburger-inner"></div>
+							</div>
+						</div>
+						<ul class="menu-list">
+							<li class="menu-item"><a href="#">Home</a></li>
+							<li class="menu-item"><a href="#">Our story</a></li>
+							<li class="menu-item"><a href="#">About Us</a></li>
+							<li class="menu-item"><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					<div class="contact col-md-4 col-lg-4 col-xl-4 d-none d-md-flex">
+						<p>
+							<a href="tel:+420353220052">
+								+42 (035) 322-00-52
+							</a>
+						</p>
+						<p>
+							<a href="tel:+420777779108">
+								+42 (077) 777-91-08
+							</a>
+						</p>
+					</div>
+					<div class="logo col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+						<div class="logo-img">
+							<img src="../dist/assets/images/logo.png" alt="logo">
+						</div>
+					</div>
+					<div class="icon-holder col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5">
+						<div class="lang">
+							<div class="form-group">
+								<select class="form-control" id="exampleFormControlSelect">
+									<option>Ru</option>
+									<option>Ua</option>
+									<option>En</option>
+								</select>
+							</div>
+						</div>
+						<div class="user">
+
+							<!-- Button trigger modal -->
+							<a data-toggle="modal" data-target="#exampleModalCenter">
+								<img src="../dist/assets/images/user.png" alt="user" class="img-fluid">
+							</a>
+
+							<!-- Modal -->
+							<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h3 class="modal-title" id="exampleModalLongTitle">Регистрация</h3>
+											<button type="button" class="close" data-dismiss="modal">
+												<span>&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<form action="#">
+												<div class="form">
+													<div class="row">
+														<div class="col pb-4">
+															<input type="text" class="form-control" placeholder="Введите имя" required>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col pb-4">
+															<input type="email" class="form-control" placeholder="Введите email" required>
+														</div>
+														<div class="col pb-4">
+															<input type="tel" placeholder="+380-000-00-00" pattern="^\+380-\d{3}-\d{2}-\d{2}$" class="phone-mask form-control" required>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col">
+															<input type="submit" value="Отправить" class="form-control">
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cart">
+							<img src="../dist/assets/images/cart.png" alt="cart" class="img-fluid">
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="main">
+			<div class="container">
+				<div class="row">
+					<div class="porcelaingirl col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+						<img src="assets/images/porcelaingirl.png" alt="porcelaingirl" class="img-fluid">
+					</div>
+					<div class="title col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+						<h1 class="title-main">
+							<span class="break-line">Art</span>
+							Salon
+						</h1>
+						<div class="line"></div>
+						<p class="title-text">
+							Официальный представитель MEISSEN, HEREND, LLADRO, AIDA и ROBBE&BERKING
+						</p>
+					</div>
+					<div class="lowpoly-cat col-12 col-md-4 col-lg-4 col-xl-4">
+						<img src="assets/images/lowpoly_cat.png" alt="lowpoly-cat" class="img-fluid">
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<footer class="footer">
+			<div class="contact col-12 col-sm-12 d-flex d-md-none">
+				<p>
+					<a href="tel:+420353220052">
+						+42 (035) 322-00-52
+					</a>
+				</p>
+				<p>
+					<a href="tel:+420777779108">
+						+42 (077) 777-91-08
+					</a>
+				</p>
+			</div>
+		</footer>
+	</div>
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+	<script src="../dist/assets/scripts/bootstrap.min.js">
+	</script>
+	<script src="../dist/assets/scripts/jquery.mask.min.js"></script>
+	<script src="../dist/assets/scripts/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+//GENERAL
+ul,
+li,
+p {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: #fff;
+
+	&:hover {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+//VALUE FOR BURGER ANIMATION
+$hamburger-padding-x : 0px !default;
+$hamburger-padding-y : 0px !default;
+$hamburger-layer-width : 30px !default;
+$hamburger-layer-height : 1px !default;
+$hamburger-layer-spacing : 10px !default;
+$hamburger-layer-color : #fff !default;
+$hamburger-layer-border-radius : 4px !default;
+$hamburger-hover-opacity : 0.7 !default;
+
+
+body {
+	font-size: 16px;
+	font-family: 'montserratlight', sans-serif;
+	color: #fff;
+}
+
+//bacground container
+.wrapper {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background: url('../images/bg.png');
+	background-repeat: no-repeat;
+}
+
+//HEADER
+.header {
+	z-index: 999;
+
+	& .row {
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+//CLASS FOR STICKY HEADER
+.sticky {
+	&-header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background-color: #000;
+	}
+}
+
+//CLASS FOR STICKY HEADER
+
+//BURGER-MENU
+.menu {
+	display: inline-flex;
+	position: relative;
+
+
+	&-list {
+		display: none;
+		position: absolute;
+		z-index: 400;
+	}
+
+	&-item {
+		padding: 5px;
+	}
+
+	& a {
+		font-size: 20px;
+	}
+}
+
+
+//jquery class
+.open {
+	display: flex;
+	width: 145px;
+	flex-direction: column;
+	position: absolute;
+	top: 50px;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 10px 20px;
+}
+
+// jquery class
+
+//phone
+.contact {
+	color: #fff;
+	display: inline-flex;
+
+	& p:first-child {
+		margin-right: 30px;
+	}
+}
+
+//logo brand
+.logo {
+	display: flex;
+	justify-content: center;
+
+	&-img {
+		background: #fff;
+		padding: 12px 18px 30px 15px;
+	}
+}
+
+//holder for user, localization and cart 
+.icon-holder {
+	display: inline-flex;
+	justify-content: flex-end;
+
+	& .lang {
+		margin-right: 62px;
+
+		//select for localization
+		& .form-group {
+			width: 28px;
+			height: 28px;
+			margin: 0;
+
+			& .form-control {
+				height: 28px;
+				padding: 2px 0 0 4px;
+				border-radius: 50%;
+				-webkit-appearance: none;
+				font-size: 14px;
+				background: transparent;
+				color: #fff;
+
+				& option {
+					color: #000;
+				}
+			}
+		}
+	}
+
+	& .user {
+		margin-right: 62px;
+	}
+}
+
+//modal
+.modal {
+	&-content {
+		background: url('../images/bg.png');
+		color: #fff;
+		font-size: 14px;
+	}
+
+	&-header {
+		border-bottom: none;
+	}
+}
+
+.close {
+	background: transparent;
+	border: none;
+	color: #fff;
+	font-size: 25px;
+}
+
+//MAIN SECTION
+.main {
+	position: relative;
+}
+
+.title {
+	padding-top: 100px;
+	padding-left: 105px;
+
+
+	&-main {
+		color: #c19a3b;
+		font-size: 140px;
+		font-family: 'eb_garamondregular';
+		margin: 0;
+		text-align: left;
+		letter-spacing: 8px;
+		line-height: 1.25;
+
+		& .break-line {
+			width: 195px;
+		}
+	}
+
+	& .line {
+		padding-top: 40px;
+		width: 330px;
+		border-bottom: 1px solid #fff;
+	}
+
+	&-text {
+		width: 380px;
+		line-height: 2.5;
+		text-align: left;
+		padding-top: 40px;
+	}
+}
+
+.porcelaingirl {
+	padding-top: 120px;
+	padding-left: 75px;
+
+	&::before {
+		position: absolute;
+		content: "";
+		background-image: url(../../../dist/assets/images/pattern_vertical.png);
+		top: 80px;
+		left: 310px;
+		width: 30px;
+		height: 50px;
+	}
+
+	&::after {
+		position: absolute;
+		content: "";
+		background-image: url(../../../dist/assets/images/pattern_horizontal.png);
+		bottom: 112px;
+		left: 405px;
+		width: 82px;
+		height: 65px;
+	}
+}
+
+.lowpoly-cat {
+	padding-top: 345px;
+	padding-left: 77px;
+
+	&::before {
+		position: absolute;
+		content: "";
+		background-image: url(../../../dist/assets/images/pattern_vertical_big.png);
+		width: 55px;
+		height: 102px;
+		top: 123px;
+		left: 430px;
+	}
+}
+
+//FOOTER
+.footer {
+	padding-top: 147px;
+	background: #fff;
+}
